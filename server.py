@@ -8,7 +8,7 @@ from urllib.parse import urlencode, quote_plus
 CLIENT_ID = os.environ.get('client_id')
 SECRET_KEY = os.environ.get('client_secret')
 FLASK_SESSION_KEY = "CHANGE ME"
-MY_ADDRESS =  "http://isamdemo-merchant-isam-demo.apps.caas-oat.gdc.geodis.org/"
+MY_ADDRESS =  os.environ.get('my_address')
 REDIRECT_URL = MY_ADDRESS + "/callback"
 API_CALLBACK_URL = MY_ADDRESS + "/apicallback"
 
