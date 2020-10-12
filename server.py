@@ -8,21 +8,21 @@ from urllib.parse import urlencode, quote_plus
 CLIENT_ID = "CHANGE ME"
 SECRET_KEY = "CHANGE ME"
 FLASK_SESSION_KEY = "CHANGE ME"
-MY_ADDRESS =  "http://merchant.authsaz.com:5000"
+MY_ADDRESS =  "http://isamdemo-merchant-isam-demo.apps.caas-oat.gdc.geodis.org/"
 REDIRECT_URL = MY_ADDRESS + "/callback"
 API_CALLBACK_URL = MY_ADDRESS + "/apicallback"
 
 
-SERVER_NAME_API = 				"https://api-gateway.authsaz.com:444"
+SERVER_NAME_API = 				"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/"
 
 # More information is available at:
 #       https://www.ibm.com/support/knowledgecenter/SSPREK_9.0.5/com.ibm.isam.doc/config/concept/OAuthEndpoints.html#oauthendpoints
-SERVER_NAME_OAUTH_AUTHORIZE = 	"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/authorize"
-SERVER_NAME_OAUTH_TOKEN = 		"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/token"
-SERVER_NAME_OAUTH_INTROSPECT = 	"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/introspect"
-SERVER_NAME_OAUTH_USERINFO = 	"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/userinfo"
-SERVER_NAME_OAUTH_REVOKE = 		"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/revoke"
-SERVER_NAME_OAUTH_LOGOUT = 		"https://api-gateway.authsaz.com/mga/sps/oauth/oauth20/logout"
+SERVER_NAME_OAUTH_AUTHORIZE = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/authorize"
+SERVER_NAME_OAUTH_TOKEN = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/token"
+SERVER_NAME_OAUTH_INTROSPECT = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/introspect"
+SERVER_NAME_OAUTH_USERINFO = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/userinfo"
+SERVER_NAME_OAUTH_REVOKE = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/revoke"
+SERVER_NAME_OAUTH_LOGOUT = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/logout"
 
 SERVER_VERIFY = SERVER_NAME_API + "/mga"
 
