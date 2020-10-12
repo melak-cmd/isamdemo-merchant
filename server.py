@@ -5,8 +5,8 @@ import requests
 from urllib.parse import urlencode, quote_plus
 
 
-CLIENT_ID = "wl2SgMW5vHZzLNBWah9T"
-SECRET_KEY = "7Mi0FtC9YVIoyH7mK319"
+CLIENT_ID = os.environ.get('client_id')
+SECRET_KEY = os.environ.get('client_secret')
 FLASK_SESSION_KEY = "CHANGE ME"
 MY_ADDRESS =  "http://isamdemo-merchant-isam-demo.apps.caas-oat.gdc.geodis.org/"
 REDIRECT_URL = MY_ADDRESS + "/callback"
