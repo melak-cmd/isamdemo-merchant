@@ -8,7 +8,7 @@ from urllib.parse import urlencode, quote_plus
 SERVER_NAME_API = os.environ.get('server_name_api')
 CLIENT_ID = os.environ.get('client_id')
 SECRET_KEY = os.environ.get('client_secret')
-FLASK_SESSION_KEY = "CHANGE ME"
+FLASK_SESSION_KEY = os.environ.get('flask_session_key')
 MY_ADDRESS =  os.environ.get('app_address')
 REDIRECT_URL = MY_ADDRESS + "/callback"
 API_CALLBACK_URL = MY_ADDRESS + "/apicallback"
