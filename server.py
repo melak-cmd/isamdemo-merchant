@@ -5,25 +5,22 @@ import os
 import requests
 from urllib.parse import urlencode, quote_plus
 
-
+SERVER_NAME_API = os.environ.get('server_name_api')
 CLIENT_ID = os.environ.get('client_id')
 SECRET_KEY = os.environ.get('client_secret')
 FLASK_SESSION_KEY = "CHANGE ME"
-MY_ADDRESS =  os.environ.get('my_address')
+MY_ADDRESS =  os.environ.get('app_address')
 REDIRECT_URL = MY_ADDRESS + "/callback"
 API_CALLBACK_URL = MY_ADDRESS + "/apicallback"
 
-
-SERVER_NAME_API = 				"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/"
-
 # More information is available at:
 #       https://www.ibm.com/support/knowledgecenter/SSPREK_9.0.5/com.ibm.isam.doc/config/concept/OAuthEndpoints.html#oauthendpoints
-SERVER_NAME_OAUTH_AUTHORIZE = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/authorize"
-SERVER_NAME_OAUTH_TOKEN = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/token"
-SERVER_NAME_OAUTH_INTROSPECT = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/introspect"
-SERVER_NAME_OAUTH_USERINFO = 	"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/userinfo"
-SERVER_NAME_OAUTH_REVOKE = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/revoke"
-SERVER_NAME_OAUTH_LOGOUT = 		"https://isam-rp1-isam-demo.apps.caas-oat.gdc.geodis.org/mga/sps/oauth/oauth20/logout"
+SERVER_NAME_OAUTH_AUTHORIZE = 	SERVER_NAME_API + "/mga/sps/oauth/oauth20/authorize"
+SERVER_NAME_OAUTH_TOKEN = 		SERVER_NAME_API + "/mga/sps/oauth/oauth20/token"
+SERVER_NAME_OAUTH_INTROSPECT = 	SERVER_NAME_API + "/mga/sps/oauth/oauth20/introspect"
+SERVER_NAME_OAUTH_USERINFO = 	SERVER_NAME_API + "/mga/sps/oauth/oauth20/userinfo"
+SERVER_NAME_OAUTH_REVOKE = 		SERVER_NAME_API + "/mga/sps/oauth/oauth20/revoke"
+SERVER_NAME_OAUTH_LOGOUT = 		SERVER_NAME_API + "/mga/sps/oauth/oauth20/logout"
 
 SERVER_VERIFY = SERVER_NAME_API + "/mga"
 
